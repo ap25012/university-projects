@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Προσθήκη Προϊόντος (POST)</title>
+    <style>
+
+        body { font-family: "Times New Roman";
+               margin: 10px; }
+
+        /* Στυλ φόρμας (w3schools)*/
+        #button { max-width: 385px;
+               margin-bottom: 15px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block;
+                margin-bottom: 6px;
+                font-weight: bold; }
+        input, textarea { width: 100%;
+                          padding: 7px;
+                          font-family: "Times New Roman";
+                          border: 2px solid yellowgreen; }
+
+        /*  κουμπί καταχώρισης (w3schools) */
+        button {
+            font-family: "Times New Roman";
+            background-color: navy;
+            color: yellowgreen;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        button:hover { background-color: navy; }
+    </style>
+</head>
+<body>
+
+<h2> Νέο Προϊόν</h2>
+
+<div id="button">
+    <div class="form-group">
+        <label for="titlosInput">Είδος:</label>
+        <input type="text" id="titlosInput">
+    </div>
+
+    <div class="form-group">
+        <label for="etaireiaInput">Εταιρεία:</label>
+        <textarea id="etaireiaInput" rows="1" ></textarea>
+    </div>
+
+
+
+    <button id="btnkataxorisi">Καταχώριση</button>
+</div>
+
+<script src="post.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Πάρε τα προϊόντα</title>
+  <style>
+    /* Έγινε με την βοήθεια του w3schools */
+    body { font-family: "Times New Roman";
+          margin: 15px; }
+    button {font-family: "Times New Roman";
+            background-color: navy;
+            color: yellowgreen;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 15px; }
+    table { border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 15px; }
+    th, td { border: 1px solid yellowgreen;
+             padding: 8px;
+             text-align: left; }
+    th {font-family: "Times New Roman";
+        background-color: navy;
+        color: yellowgreen; }
+
+    /* Ο πίνακας είναι κρυφός*/
+    #apotelesmata { display: none; }
+  </style>
+</head>
+<body>
+
+<h2>Φορτώνονται τα προΪόντα..</h2>
+
+<button id="fereproionta">Εμφάνιση Δεδομένων</button>
+
+<div id="apotelesmata">
+  <table id="pinakasproionton">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Τίτλος</th>
+      <th>Περιγραφή</th>
+      <th>Τιμή</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <select id="epiloghproionton">
+    <option value="">Select ID</option>
+  </select>
+</div>
+
+<script src="get.js"></script>
+</body>
+</html>
